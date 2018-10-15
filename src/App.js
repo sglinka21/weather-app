@@ -1,25 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SearchForm from './components/SearchFrom';
+import WeatherList from './components/WeatherList';
 
 class App extends Component {
+  state = {
+    city: '',
+    weather: [
+      { id: 1, day: '10/10/2018', temp: 30, windSpeed: 30, humidity: 20 },
+      { id: 2, day: '11/10/2018', temp: 31, windSpeed: 20, humidity: 50 },
+      { id: 3, day: '12/10/2018', temp: 32, windSpeed: 10, humidity: 10 },
+      { id: 4, day: '13/10/2018', temp: 31, windSpeed: 34, humidity: 25 }
+    ],
+    isLoading: true
+  }
+
+  addCity = (city) => {
+    this.setState({
+      city
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <SearchForm
+            addCity={this.addCity}
+          />
+          <WeatherList
+            weathers={this.state.weather}
+            isLoading={this.state.isLoading}/>
       </div>
     );
   }
