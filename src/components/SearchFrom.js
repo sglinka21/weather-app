@@ -24,7 +24,7 @@ class SearchFrom extends Component{
         return (
             <div className="container search-box">
                 <div className="row">
-                    <div className="col s12 m8 l8 offset-l2 offset-m2">
+                    <div className="col s12 m10 l8 offset-l2 offset-m1">
                         <div className="card z-depth-3">
                             <div className="card-content">
                                 <form className="container" onSubmit={this.handleSubmit}>

@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
           <Modal>
-            <WeatherDetails />
+          {/* <WeatherDetails /> */}
           </Modal>
           <SearchForm
             addCity={this.addCity}

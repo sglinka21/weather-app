@@ -2,21 +2,22 @@
     color: #fff;
     overflow: hidden;
     font-family: calibri, sans-serif;
-    padding: 18px;
+    padding: 1.13rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     z-index: 400;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1.25rem;
 }
 
 .day-name {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 40px;
 }
 
 .weather-icon {
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
     margin-top: 15px;
     border-bottom: 2px solid #fff;
@@ -24,11 +25,11 @@
 }
 
 .weather-day-temp {
-    font-size: 75px;
-    display: inline;
+    font-size: 4.7rem;
     vertical-align: baseline;
     text-align: left;
     padding-right: 0.3em;
+    float: left;
 }
 
 .weather-day-temp .units {
@@ -36,9 +37,9 @@
 }
 
 .weather-details {
-    display: inline-block;
     text-align: right;
-    font-size: 25px;
+    font-size: 1.57rem;
+    float: right;
 }
 
 .weather-details i {
@@ -54,7 +55,7 @@
 }
 
 .weather-windspeed .units{
-    font-size: 15px;
+    font-size: .94rem;
     letter-spacing: -0.25em;
 }
 
@@ -72,4 +73,17 @@
 
 .lightning {
     background-image: radial-gradient(circle farthest-side, #221d54,#1e3e76);
+}
+
+
+@media only screen and (min-width: 601px) {
+
+
+}
+
+@media only screen and (min-width: 993px) {
+
+}
+
+@media only screen and (min-width: 1201px) {
 }
