@@ -1,5 +1,6 @@
 .App {
   text-align: center;
-  height: 100vh;
-  background: url('./images/background.png') no-repeat fixed center;
+  min-height: 100vh;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #1cb9f2, #1cf2eb);
 }

@@ -1,0 +1,75 @@
+.weather-card {
+    color: #fff;
+    overflow: hidden;
+    font-family: calibri, sans-serif;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 400;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.day-name {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 40px;
+}
+
+.weather-icon {
+    font-size: 80px;
+    text-align: center;
+    margin-top: 15px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.weather-day-temp {
+    font-size: 75px;
+    display: inline;
+    vertical-align: baseline;
+    text-align: left;
+    padding-right: 0.3em;
+}
+
+.weather-day-temp .units {
+    letter-spacing: -0.1em;
+}
+
+.weather-details {
+    display: inline-block;
+    text-align: right;
+    font-size: 25px;
+}
+
+.weather-details i {
+    padding-right: 0.1em;
+}
+
+.weather-humidity {
+    display: block;
+}
+
+.weather-windspeed {
+    display: block;
+}
+
+.weather-windspeed .units{
+    font-size: 15px;
+    letter-spacing: -0.25em;
+}
+
+.sunny {
+    background-image: radial-gradient(circle farthest-side,#ffdd40,#ffee50);
+}
+
+.cloudy {
+    background-image: radial-gradient(circle farthest-side,#ccc,#ddd);
+}
+
+.rain {
+    background-image: radial-gradient(circle farthest-side,#778198,#90aeaa);
+}
+
+.lightning {
+    background-image: radial-gradient(circle farthest-side, #221d54,#1e3e76);
+}
