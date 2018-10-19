@@ -2,10 +2,10 @@ import React from 'react'
 import './WeatherItem.css'
 import 'weathericons/css/weather-icons.css';
 
-const WeatherItem = ({weather}) => {
+const WeatherItem = ({weather, showDetails}) => {
     return (
         <div className="col s12 m6 l3">
-            <div className="weather-card rain hoverable">
+            <div className="weather-card rain hoverable" onClick={showDetails}>
                 <div className="day-name">Tue</div>
                 <div className="weather-icon">
                     <i className="wi wi-day-lightning"></i>
