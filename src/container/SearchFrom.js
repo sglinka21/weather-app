@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import '../components/SearchForm.css'
+import {connect} from 'react-redux';
+import {fetchWeatherData} from '../store/actions/weatherActions';
+import './SearchForm.css'
 
 class SearchFrom extends Component{
     state = {
@@ -14,7 +16,7 @@ class SearchFrom extends Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.addCity(this.state.city);
+        this.props.fetchWeatherData(this.state.city);
         this.setState({
             city: ''
         });
@@ -45,4 +47,10 @@ class SearchFrom extends Component{
     }
 }
 
-export default SearchFrom
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchWeatherData: (cityName) => dispatch(fetchWeatherData(cityName))
+    }
+}
+
+export default connect(null, mapDispatchToProps)(SearchFrom)
