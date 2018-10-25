@@ -35,13 +35,13 @@
 .weather-details-day-icon {
     font-size: 5rem;
     text-align: center;
-    padding: 1rem 0; 
+    padding: 1rem 0;
 }
 
 .weather-details-day-temp {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    font-weight: bold;   
+    font-weight: bold;
 }
 
 .weather-hour-list-item {
@@ -55,4 +55,22 @@
 
 .weather-hour-list-item:first-of-type {
     border-left: 1px solid #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .weather-hour-list {
+        width: 66%;
+        margin-left: 17%;
+    }
+    .weather-hour-list-item {
+        font-size: 1.4rem;
+        border: 1px solid #fff;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .weather-hour-list {
+        width: 98%;
+        margin-left: 1%;
+    }
 }

@@ -2,23 +2,23 @@
     color: #fff;
     overflow: hidden;
     font-family: calibri, sans-serif;
-    padding: 2rem 3rem;
+    padding: .8rem 1rem ;
     border: 1px solid #ccc;
     border-radius: 5px;
     z-index: 400;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    margin-bottom: 2rem;
+    box-shadow: 0 2px 2px 0 rgba(194, 88, 88, 0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
     cursor: pointer;
 }
 
 .day-name {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .weather-icon {
-    font-size: 8rem;
+    font-size: 7rem;
     text-align: center;
     padding-top: 15px;
     border-bottom: 2px solid #fff;
@@ -26,7 +26,7 @@
 }
 
 .weather-day-temp {
-    font-size: 8rem;
+    font-size: 6.5rem;
     float: left;
 }
 
@@ -35,9 +35,9 @@
 }
 
 .weather-details {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     float: right;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .weather-details i {
@@ -45,7 +45,7 @@
 }
 
 .weather-windspeed .units{
-    font-size: 2rem;
+    font-size: 1.5rem;
     letter-spacing: -0.25em;
 }
 
@@ -69,6 +69,42 @@
     background-image: radial-gradient(circle farthest-side, #667db6,#667db6);
 }
 
+@media only screen and (min-width: 601px) {
+    .weather-card {
+        padding: 2rem 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .day-name {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .weather-icon {
+        font-size: 8rem;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .weather-day-temp {
+        font-size: 8rem;
+    }
+
+    .weather-details {
+        font-size: 3.5rem;
+        padding-top: 1rem;
+    }
+
+    .weather-details i {
+        padding-right: 0.1em;
+    }
+
+    .weather-windspeed .units{
+        font-size: 2rem;
+        letter-spacing: -0.25em;
+    }
+
+}
 
 @media only screen and (min-width: 601px) {
     .weather-card {
